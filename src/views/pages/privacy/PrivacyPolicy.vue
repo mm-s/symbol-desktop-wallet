@@ -77,11 +77,13 @@
             </a>
             or by mail at NEM Group Limited. 57 Mohamed Sultan Rd., #01-05, Sultan-Link, Singapore 238997.
         </p>
+        <button class="link" @click="backToLogin">{{ $t('back') }}</button>
     </div>
 </template>
 <script>
 import { Vue } from 'vue-property-decorator';
-export default class PrivacyPolicy extends Vue {}
+import PrivacyPolicyTs from './PrivacyPolicyTs';
+export default class PrivacyPolicy extends PrivacyPolicyTs {}
 </script>
 
 <style lang="less" scoped>
